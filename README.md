@@ -13,6 +13,19 @@ The __filter__ package is generally provided as a folder with source (`.java`) a
 
 A sample set of images are provided in an __"images"__ directory.
 
+## Creating an executable jar file
+Make sure you have BlueJ installed on your device. Installation instructions can be found on the [BlueJ website](https://bluej.org/index.html) under the "Download and Install" header.
+
+1. Open up BlueJ on your device.
+2. Click the **project** tab and select *open project*.
+3. Find the base directory for your imagelab repository. If you are using git this is the directory you created for your clone of the repository.
+4. Select the directory and click *open*, this should open up the directory with BlueJ.
+5. Open up the different classes and click the *compile* option under the **tools** tab. Do this for each class so you can compile everything.
+6. With this done you can now click the **project** tab and select *create jar file*.
+7. It should now give you an option to select the main class. The main class for this project is Run, so select Run and click *continue*.
+8. Choose a name for your jar to be saved under. Make sure to save your jar file in base directory of your imagelab repository.
+
+
 ## To use from command line:  
 * Make sure the __filters__ directory is _in the same directory_ as the __imagelab.jar__ file.
 * Then issue the command  
