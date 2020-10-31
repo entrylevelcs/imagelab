@@ -14,17 +14,21 @@ The __filter__ package is generally provided as a folder with source (`.java`) a
 A sample set of images are provided in an __"images"__ directory.
 
 ## Creating an executable jar file
-Make sure you have BlueJ installed on your device. Installation instructions can be found on the [BlueJ website](https://bluej.org/index.html) under the "Download and Install" header.
+Instructions may vary depending on the IDE but in general the process will be similar to these instructions.
 
-1. Open up BlueJ on your device.
-2. Click the **project** tab and select *open project*.
-3. Find the base directory for your imagelab repository. If you are using git this is the directory you created for your clone of the repository.
-4. Select the directory and click *open*, this should open up the directory with BlueJ.
-5. Open up the different classes and click the *compile* option under the **tools** tab. Do this for each class so you can compile everything.
-6. With this done you can now click the **project** tab and select *create jar file*.
-7. It should now give you an option to select the main class. The main class for this project is Run, so select Run and click *continue*.
-8. Choose a name for your jar to be saved under. Make sure to save your jar file in base directory of your imagelab repository.
+1. Open up the java files from this repository in your desired IDE. These will be found in the **sound, filters and imagelab** folders. Don't forget to also open up the **Run.java** from the base directory of the project. 
+2. Compile all of the java files.
+3. Navigate your IDE to find its *create jar* functionality.
+4. Set up the dependencies of the jar to use all of the files except for the **Run.java**.
+5. It should now give you an option to select the main class. The main class for this project is Run, so select Run as the main class.
+6. Choose a name for your jar to be saved under. Make sure to save your jar file in base directory of your imagelab repository.
 
+Some specific examples from popular IDE's can be found here:
+- [Eclipse](https://support.smartbear.com/alertsite/docs/monitors/web/selenium/export-eclipse-java-project-as-runnable-jar.html)
+- [JDeveloper](https://www.albinsblog.com/2014/12/building-executable-jar-file-with.html)
+- [IntelliJ](https://www.jetbrains.com/help/idea/compiling-applications.html#package_into_jar)
+- [BlueJ](https://bluej.org/tutorial/tutorial-v4.pdf)
+- [NetBeans](https://netbeans.org/kb/articles/javase-deploy.html)
 
 ## To use from command line:  
 * Make sure the __filters__ directory is _in the same directory_ as the __imagelab.jar__ file.
