@@ -14,21 +14,19 @@ The __filter__ package is generally provided as a folder with source (`.java`) a
 A sample set of images are provided in an __"images"__ directory.
 
 ## Creating an executable jar file
-Instructions may vary depending on the IDE but in general the process will be similar to these instructions.
+Project is already set up using the gradle build environment so we can just use that to create the jar file.
+1. Open up the CLI and change the directory to the projects root directory.
+2. Execute the command "gradle build"
+3. This will build/rebuild the jar file using all the required dependencies.
 
-1. Open up the java files from this repository in your desired IDE. These will be found in the **sound, filters and imagelab** folders. Don't forget to also open up the **Run.java** from the base directory of the project. 
-2. Compile all of the java files.
-3. Navigate your IDE to find its *create jar* functionality.
-4. Set up the dependencies of the jar to use all of the files except for the **Run.java**.
-5. It should now give you an option to select the main class. The main class for this project is Run, so select Run as the main class.
-6. Choose a name for your jar to be saved under. Make sure to save your jar file in base directory of your imagelab repository.
-
-Some specific examples from popular IDE's can be found here:
+The executable jar file can also be created straight from an IDE, some specific examples from popular IDE's can be found here:
 - [Eclipse](https://support.smartbear.com/alertsite/docs/monitors/web/selenium/export-eclipse-java-project-as-runnable-jar.html)
 - [JDeveloper](https://www.albinsblog.com/2014/12/building-executable-jar-file-with.html)
 - [IntelliJ](https://www.jetbrains.com/help/idea/compiling-applications.html#package_into_jar)
 - [BlueJ](https://bluej.org/tutorial/tutorial-v4.pdf)
 - [NetBeans](https://netbeans.org/kb/articles/javase-deploy.html)
+- [VS Code](https://code.visualstudio.com/docs/java/java-project)
+- [DRJava](http://drjava.org/index.php?page=docs/user/ch04.html)
 
 ## To use from command line:  
 * Make sure the __filters__ directory is _in the same directory_ as the __imagelab.jar__ file.
