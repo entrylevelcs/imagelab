@@ -14,10 +14,21 @@ The __filter__ package is generally provided as a folder with source (`.java`) a
 A sample set of images are provided in an __"images"__ directory.
 
 ## Creating an executable jar file
-Project is already set up using the gradle build environment so we can just use that to create the jar file.
+If there is no automated build environment set up, the jar file can be created using "jar."
 1. Open up the CLI and change the directory to the projects root directory.
-2. Execute the command "gradle build"
+2. Execute the command "echo Main-Class: Run > MANIFEST.MF" to create a manifest file you will use later.
+3. Create the jar using the command "jar cfm (DESIRED_FILENAME.jar) MANIFEST.MF \*.class sound/\*.class imagelab/\*.class filters/\*.class"
+4. The new jar file will be named whatever you set it to and it will be located in the projects root directory.
+
+More info on the java commands can be found [here](https://docs.oracle.com/javase/tutorial/deployment/jar/build.html).
+
+However, the project is already set up using the gradle build environment and gradle wrapper so we can just use those to create the jar file.
+1. Open up the CLI and change the directory to the projects root directory.
+2. Execute the command "gradle build" or "./gradlew build"
 3. This will build/rebuild the jar file using all the required dependencies.
+4. The new jar file will be named "imagelab.jar" and it will be located in the projects root directory.
+
+More info on gradle can be found [here](https://docs.gradle.org/current/userguide/userguide.html) and more info on the gradle wrapper can be found [here](https://docs.gradle.org/current/userguide/gradle_wrapper.html).
 
 The executable jar file can also be created straight from an IDE, some specific examples from popular IDE's can be found here:
 - [Eclipse](https://support.smartbear.com/alertsite/docs/monitors/web/selenium/export-eclipse-java-project-as-runnable-jar.html)
