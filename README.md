@@ -25,7 +25,7 @@ More information on gradle can be found [here](https://docs.gradle.org/current/u
 If there is no automated build environment set up, the jar file can be created using `jar`.
 1. Open up the CLI and change the directory to the projects root directory.
 2. Execute the command `javac Run.java` to compile the Run.java file.
-3. Execute the command `javac \*.java` in the package directories to compile/recompile those package java files. The package directories for this project will be the sound and imagelab directories.
+3. Execute the command `javac *.java` in the package directories to compile/recompile those package java files. The package directories for this project will be the sound and imagelab directories.
 4. In the root directory execute the command `echo Main-Class: Run > MANIFEST.MF` to create the manifest file you will use for making the jar.
 5. Create the jar using the command `jar cfm DESIRED_FILENAME.jar MANIFEST.MF *.class sound/*.class imagelab/*.class`
 6. The new jar file will retain the name you gave it and will be located in the projects root directory.
